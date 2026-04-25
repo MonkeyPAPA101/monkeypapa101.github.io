@@ -1,3 +1,5 @@
+<!-- cn.html -->
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -12,185 +14,107 @@
     box-sizing:border-box;
 }
 
-html{
+html, body{
+    height:100%;
     scroll-behavior:smooth;
-}
-
-body{
-    font-family: Arial, sans-serif;
+    scroll-snap-type:y mandatory;
+    overflow-y:scroll;
+    font-family:Arial, sans-serif;
     background:#000;
     color:#fff;
-    overflow-x:hidden;
 }
 
 section{
     height:100vh;
+    scroll-snap-align:start;
     display:flex;
-    align-items:center;
     justify-content:center;
+    align-items:center;
     padding:60px;
+    text-align:center;
     border-bottom:1px solid rgba(255,255,255,0.08);
 }
 
 .container{
+    max-width:1000px;
     width:100%;
-    max-width:1200px;
-    margin:auto;
 }
 
-.hero{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:60px;
-    align-items:center;
-}
-
-.logo-box{
-    text-align:center;
-}
-
-.logo-box img{
-    width:260px;
-    max-width:100%;
+.logo{
+    width:220px;
     margin-bottom:30px;
 }
 
-.logo-box h1{
-    font-size:58px;
+h1{
+    font-size:60px;
     letter-spacing:2px;
+    margin-bottom:20px;
 }
 
-.logo-box h2{
-    font-size:24px;
-    color:#cccccc;
-    margin-top:15px;
-}
-
-.logo-box p{
-    margin-top:40px;
-    font-size:22px;
-    font-weight:600;
-    line-height:1.6;
-}
-
-.timeline{
-    border-left:2px solid rgba(255,255,255,0.25);
-    padding-left:40px;
-}
-
-.timeline-item{
-    margin-bottom:40px;
-}
-
-.timeline-item h3{
-    font-size:28px;
-    margin-bottom:10px;
-}
-
-.timeline-item p{
-    color:#cccccc;
-    font-size:18px;
-}
-
-.content{
-    text-align:center;
-    max-width:900px;
-    margin:auto;
-}
-
-.content h2{
-    font-size:52px;
+h2{
+    font-size:42px;
     margin-bottom:30px;
 }
 
-.content p{
+p{
     font-size:22px;
     line-height:1.8;
     color:#d0d0d0;
 }
 
 .quote{
-    font-size:42px;
+    font-size:46px;
     font-weight:700;
-    text-align:center;
     line-height:1.5;
 }
 
 .footer{
-    text-align:center;
-    padding:50px 20px;
     font-size:16px;
     color:#888;
+    margin-top:40px;
 }
 </style>
 </head>
 
 <body>
 
-<!-- 第一屏 -->
-
 <section>
-    <div class="container hero">
+    <div class="container">
+        < img src="logo.png" alt="Monkey Papa Logo" class="logo">
 
-        <div class="logo-box">
-            <!-- 替换成你的 logo 文件 -->
-            < img src="logo.png" alt="Monkey Papa Logo">
+        <h1>MONKEY PAPA</h1>
 
-            <h1>MONKEY PAPA</h1>
-            <h2>全球商业架构师</h2>
+        <p>
+            全球商业架构师
+        </p >
 
-            <p>
-                我们构建系统。<br>
-                不只是商业。
-            </p >
+        <div class="quote" style="margin-top:40px;">
+            我们构建系统。<br>
+            不只是商业。
         </div>
-
-        <div class="timeline">
-
-            <div class="timeline-item">
-                <h3>2024</h3>
-                <p>战略基础建立</p >
-            </div>
-
-            <div class="timeline-item">
-                <h3>2025</h3>
-                <p>一人商业系列启动</p >
-            </div>
-
-            <div class="timeline-item">
-                <h3>2026</h3>
-                <p>全球商业系统布局</p >
-            </div>
-
-            <div class="timeline-item">
-                <h3>2027</h3>
-                <p>商业帝国扩张计划</p >
-            </div>
-
-        </div>
-
     </div>
 </section>
 
-<!-- 第二屏 -->
-
 <section>
-    <div class="content">
+    <div class="container">
         <h2>我们构建什么</h2>
+
         <p>
-            Monkey Papa 专注于跨行业的商业系统设计。<br>
-            从餐厅到零售，从 AI 工作流到数字化运营，<br>
-            我们把碎片化的想法，<br>
+            Monkey Papa 专注于跨行业商业系统设计。<br><br>
+
+            从餐厅到零售，<br>
+            从 AI 工作流到数字化运营，<br><br>
+
+            我们把碎片化的想法<br>
             转化为真正可执行且可盈利的商业结构。
         </p >
     </div>
 </section>
 
-<!-- 第三屏 -->
-
 <section>
-    <div class="content">
+    <div class="container">
         <h2>一人商业帝国系列</h2>
+
         <p>
             一人餐厅<br>
             一人美甲店<br>
@@ -203,20 +127,19 @@ section{
     </div>
 </section>
 
-<!-- 第四屏 -->
-
 <section>
-    <div class="content quote">
-        我们出售清晰。<br>
-        我们设计执行。
+    <div class="container">
+        <div class="quote">
+            我们出售清晰。<br>
+            我们设计执行。
+        </div>
     </div>
 </section>
 
-<!-- 第五屏 -->
-
 <section>
-    <div class="content">
+    <div class="container">
         <h2>战略咨询</h2>
+
         <p>
             商业诊断<br>
             系统架构<br>
@@ -225,15 +148,13 @@ section{
 
             我们从底层重构商业。
         </p >
+
+        <div class="footer">
+            Monkey Papa © 2026<br>
+            商业架构 • 战略系统 • 全球执行
+        </div>
     </div>
 </section>
-
-<!-- 底部 -->
-
-<div class="footer">
-    Monkey Papa © 2026<br>
-    商业架构 • 战略系统 • 全球执行
-</div>
 
 </body>
 </html>
