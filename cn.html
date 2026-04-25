@@ -12,239 +12,228 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     font-family: Arial, sans-serif;
-    background:#0b0b0b;
-    color:#ffffff;
-    line-height:1.7;
+    background:#000;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+section{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:60px;
+    border-bottom:1px solid rgba(255,255,255,0.08);
 }
 
 .container{
-    width:90%;
+    width:100%;
     max-width:1200px;
     margin:auto;
 }
 
-header{
-    padding:100px 0 80px;
-    text-align:center;
-    background:linear-gradient(to bottom,#111,#000);
+.hero{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
 }
 
-header h1{
-    font-size:64px;
-    margin-bottom:20px;
-    font-weight:700;
+.logo-box{
+    text-align:center;
+}
+
+.logo-box img{
+    width:260px;
+    max-width:100%;
+    margin-bottom:30px;
+}
+
+.logo-box h1{
+    font-size:58px;
     letter-spacing:2px;
 }
 
-header h2{
-    font-size:28px;
-    margin-bottom:25px;
-    color:#d9d9d9;
-}
-
-header p{
-    max-width:800px;
-    margin:auto;
-    font-size:20px;
-    color:#bbbbbb;
-}
-
-.section{
-    padding:80px 0;
-    border-top:1px solid rgba(255,255,255,0.08);
-}
-
-.section h3{
-    font-size:38px;
-    margin-bottom:30px;
-    text-align:center;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
-    margin-top:40px;
-}
-
-.card{
-    background:#141414;
-    border:1px solid rgba(255,255,255,0.08);
-    border-radius:16px;
-    padding:30px;
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-6px);
-}
-
-.card h4{
+.logo-box h2{
     font-size:24px;
-    margin-bottom:15px;
+    color:#cccccc;
+    margin-top:15px;
 }
 
-.card p{
-    color:#cfcfcf;
+.logo-box p{
+    margin-top:40px;
+    font-size:22px;
+    font-weight:600;
+    line-height:1.6;
+}
+
+.timeline{
+    border-left:2px solid rgba(255,255,255,0.25);
+    padding-left:40px;
+}
+
+.timeline-item{
+    margin-bottom:40px;
+}
+
+.timeline-item h3{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.timeline-item p{
+    color:#cccccc;
+    font-size:18px;
+}
+
+.content{
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+}
+
+.content h2{
+    font-size:52px;
+    margin-bottom:30px;
+}
+
+.content p{
+    font-size:22px;
+    line-height:1.8;
+    color:#d0d0d0;
 }
 
 .quote{
-    text-align:center;
-    font-size:32px;
+    font-size:42px;
     font-weight:700;
-    padding:100px 20px;
-    color:#ffffff;
+    text-align:center;
+    line-height:1.5;
 }
 
 .footer{
     text-align:center;
-    padding:60px 20px;
-    color:#999;
-    border-top:1px solid rgba(255,255,255,0.08);
+    padding:50px 20px;
+    font-size:16px;
+    color:#888;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-    <div class="container">
-        <h1>Monkey Papa</h1>
-        <h2>全球商业架构师</h2>
+<!-- 第一屏 -->
+
+<section>
+    <div class="container hero">
+
+        <div class="logo-box">
+            <!-- 替换成你的 logo 文件 -->
+            < img src="logo.png" alt="Monkey Papa Logo">
+
+            <h1>MONKEY PAPA</h1>
+            <h2>全球商业架构师</h2>
+
+            <p>
+                我们构建系统。<br>
+                不只是商业。
+            </p >
+        </div>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <h3>2024</h3>
+                <p>战略基础建立</p >
+            </div>
+
+            <div class="timeline-item">
+                <h3>2025</h3>
+                <p>一人商业系列启动</p >
+            </div>
+
+            <div class="timeline-item">
+                <h3>2026</h3>
+                <p>全球商业系统布局</p >
+            </div>
+
+            <div class="timeline-item">
+                <h3>2027</h3>
+                <p>商业帝国扩张计划</p >
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- 第二屏 -->
+
+<section>
+    <div class="content">
+        <h2>我们构建什么</h2>
         <p>
-            我们不只是卖书。<br>
-            我们构建商业系统。<br>
-            从战略到执行，从想法到可规模化的商业结构。
-        </p >
-    </div>
-</header>
-
-<section class="quote">
-    我们出售清晰。<br>
-    我们设计执行。
-</section>
-
-<section class="section">
-    <div class="container">
-        <h3>我们是谁</h3>
-        <p style="text-align:center; max-width:900px; margin:auto; font-size:18px; color:#cccccc;">
-            Monkey Papa 是一个跨行业的商业架构师品牌，
-            专注于重构现代商业系统。
-            我们服务于餐厅、美甲店、农场、植物园、零售、
-            AI工作流、自动化系统以及数字商业结构。
-            我们的使命很简单：
-            把碎片化的想法，
-            变成真正可执行且可盈利的商业系统。
+            Monkey Papa 专注于跨行业的商业系统设计。<br>
+            从餐厅到零售，从 AI 工作流到数字化运营，<br>
+            我们把碎片化的想法，<br>
+            转化为真正可执行且可盈利的商业结构。
         </p >
     </div>
 </section>
 
-<section class="section">
-    <div class="container">
-        <h3>核心产品</h3>
+<!-- 第三屏 -->
 
-        <div class="grid">
+<section>
+    <div class="content">
+        <h2>一人商业帝国系列</h2>
+        <p>
+            一人餐厅<br>
+            一人美甲店<br>
+            一人农场<br>
+            一人植物园<br><br>
 
-            <div class="card">
-                <h4>书籍体系</h4>
-                <p>
-                    顶级商业思维、
-                    一人商业系列、
-                    商业系统设计、
-                    战略白皮书与方法论输出。
-                </p >
-            </div>
-
-            <div class="card">
-                <h4>商业咨询</h4>
-                <p>
-                    商业诊断、
-                    结构优化、
-                    增长路径设计、
-                    运营策略咨询。
-                </p >
-            </div>
-
-            <div class="card">
-                <h4>完整解决方案</h4>
-                <p>
-                    全流程系统设计、
-                    AI自动化、
-                    后台架构搭建、
-                    可扩展商业模型。
-                </p >
-            </div>
-
-            <div class="card">
-                <h4>知识品牌</h4>
-                <p>
-                    全球内容系统、
-                    图书、
-                    媒体影响力、
-                    长期战略品牌建设。
-                </p >
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container">
-        <h3>一人商业系列</h3>
-
-        <div class="grid">
-
-            <div class="card">
-                <h4>一人餐厅</h4>
-                <p>
-                    高效率、低人工成本的单人餐厅完整运营系统。
-                </p >
-            </div>
-
-            <div class="card">
-                <h4>一人美甲店</h4>
-                <p>
-                    美业效率提升与可扩展服务系统的智能结构设计。
-                </p >
-            </div>
-
-            <div class="card">
-                <h4>一人农场</h4>
-                <p>
-                    农业工作流优化与自动化单人农场模型。
-                </p >
-            </div>
-
-            <div class="card">
-                <h4>一人植物园</h4>
-                <p>
-                    植物商业与体验空间的可持续管理系统。
-                </p >
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container">
-        <h3>未来愿景</h3>
-        <p style="text-align:center; max-width:900px; margin:auto; font-size:18px; color:#cccccc;">
-            目标不是建立一家小生意，
-            而是打造一个由系统驱动的商业帝国。
-            Monkey Papa 的存在，
-            就是为了设计这套架构。
+            书不是最终产品。<br>
+            它只是完整商业系统的入口。
         </p >
     </div>
 </section>
 
-<footer class="footer">
+<!-- 第四屏 -->
+
+<section>
+    <div class="content quote">
+        我们出售清晰。<br>
+        我们设计执行。
+    </div>
+</section>
+
+<!-- 第五屏 -->
+
+<section>
+    <div class="content">
+        <h2>战略咨询</h2>
+        <p>
+            商业诊断<br>
+            系统架构<br>
+            工作流自动化<br>
+            商业优化<br><br>
+
+            我们从底层重构商业。
+        </p >
+    </div>
+</section>
+
+<!-- 底部 -->
+
+<div class="footer">
     Monkey Papa © 2026<br>
     商业架构 • 战略系统 • 全球执行
-</footer>
+</div>
 
 </body>
 </html>
