@@ -1,9 +1,11 @@
+<!-- en.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Monkey Papa | Flagship Website</title>
+<title>Monkey Papa | Global Business Architect</title>
 
 <style>
 *{
@@ -12,184 +14,107 @@
     box-sizing:border-box;
 }
 
-html{
+html, body{
+    height:100%;
     scroll-behavior:smooth;
-}
-
-body{
-    font-family: Arial, sans-serif;
+    scroll-snap-type:y mandatory;
+    overflow-y:scroll;
+    font-family:Arial, sans-serif;
     background:#000;
     color:#fff;
-    overflow-x:hidden;
 }
 
 section{
     height:100vh;
+    scroll-snap-align:start;
     display:flex;
-    align-items:center;
     justify-content:center;
+    align-items:center;
     padding:60px;
+    text-align:center;
     border-bottom:1px solid rgba(255,255,255,0.08);
 }
 
 .container{
+    max-width:1000px;
     width:100%;
-    max-width:1200px;
-    margin:auto;
 }
 
-.hero{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:60px;
-    align-items:center;
-}
-
-.logo-box{
-    text-align:center;
-}
-
-.logo-box img{
-    width:260px;
-    max-width:100%;
+.logo{
+    width:220px;
     margin-bottom:30px;
 }
 
-.logo-box h1{
-    font-size:58px;
+h1{
+    font-size:60px;
     letter-spacing:2px;
+    margin-bottom:20px;
 }
 
-.logo-box h2{
-    font-size:24px;
-    color:#cccccc;
-    margin-top:15px;
-}
-
-.logo-box p{
-    margin-top:40px;
-    font-size:22px;
-    font-weight:600;
-    line-height:1.6;
-}
-
-.timeline{
-    border-left:2px solid rgba(255,255,255,0.25);
-    padding-left:40px;
-}
-
-.timeline-item{
-    margin-bottom:40px;
-}
-
-.timeline-item h3{
-    font-size:28px;
-    margin-bottom:10px;
-}
-
-.timeline-item p{
-    color:#cccccc;
-    font-size:18px;
-}
-
-.content{
-    text-align:center;
-    max-width:900px;
-    margin:auto;
-}
-
-.content h2{
-    font-size:52px;
+h2{
+    font-size:42px;
     margin-bottom:30px;
 }
 
-.content p{
+p{
     font-size:22px;
     line-height:1.8;
     color:#d0d0d0;
 }
 
 .quote{
-    font-size:42px;
+    font-size:46px;
     font-weight:700;
-    text-align:center;
     line-height:1.5;
 }
 
 .footer{
-    text-align:center;
-    padding:50px 20px;
     font-size:16px;
     color:#888;
+    margin-top:40px;
 }
 </style>
 </head>
 
 <body>
 
-<!-- Screen 1 -->
-
 <section>
-    <div class="container hero">
+    <div class="container">
+        < img src="logo.png" alt="Monkey Papa Logo" class="logo">
 
-        <div class="logo-box">
-            <!-- 替换成你的 logo 文件 -->
-            < img src="logo.png" alt="Monkey Papa Logo">
+        <h1>MONKEY PAPA</h1>
 
-            <h1>MONKEY PAPA</h1>
-            <h2>Global Business Architect</h2>
+        <p>
+            Global Business Architect
+        </p >
 
-            <p>
-                We Build Systems.<br>
-                Not Just Businesses.
-            </p >
+        <div class="quote" style="margin-top:40px;">
+            We Build Systems.<br>
+            Not Just Businesses.
         </div>
-
-        <div class="timeline">
-
-            <div class="timeline-item">
-                <h3>2024</h3>
-                <p>Strategic Foundation</p >
-            </div>
-
-            <div class="timeline-item">
-                <h3>2025</h3>
-                <p>One-Person Business Series</p >
-            </div>
-
-            <div class="timeline-item">
-                <h3>2026</h3>
-                <p>Global Business Systems</p >
-            </div>
-
-            <div class="timeline-item">
-                <h3>2027</h3>
-                <p>Commercial Empire Expansion</p >
-            </div>
-
-        </div>
-
     </div>
 </section>
 
-<!-- Screen 2 -->
-
 <section>
-    <div class="content">
+    <div class="container">
         <h2>What We Build</h2>
+
         <p>
-            Monkey Papa designs scalable commercial systems across industries.
-            From restaurants to retail, from AI workflows to digital operations,
-            we transform fragmented ideas into profitable and executable structures.
+            Monkey Papa designs scalable commercial systems across industries.<br><br>
+
+            From restaurants to retail,<br>
+            from AI workflows to digital operations,<br><br>
+
+            we transform fragmented ideas<br>
+            into profitable and executable structures.
         </p >
     </div>
 </section>
 
-<!-- Screen 3 -->
-
 <section>
-    <div class="content">
+    <div class="container">
         <h2>One-Person Empire Series</h2>
+
         <p>
             One-Person Restaurant<br>
             One-Person Nail Salon<br>
@@ -202,37 +127,34 @@ section{
     </div>
 </section>
 
-<!-- Screen 4 -->
-
 <section>
-    <div class="content quote">
-        We Sell Clarity.<br>
-        We Design Execution.
+    <div class="container">
+        <div class="quote">
+            We Sell Clarity.<br>
+            We Design Execution.
+        </div>
     </div>
 </section>
 
-<!-- Screen 5 -->
-
 <section>
-    <div class="content">
+    <div class="container">
         <h2>Strategic Consulting</h2>
+
         <p>
-            Business diagnosis.<br>
-            System architecture.<br>
-            Workflow automation.<br>
-            Commercial optimization.<br><br>
+            Business diagnosis<br>
+            System architecture<br>
+            Workflow automation<br>
+            Commercial optimization<br><br>
 
             We rebuild businesses from the ground up.
         </p >
+
+        <div class="footer">
+            Monkey Papa © 2026<br>
+            Business Architecture • Strategic Systems • Global Execution
+        </div>
     </div>
 </section>
-
-<!-- Footer -->
-
-<div class="footer">
-    Monkey Papa © 2026<br>
-    Business Architecture • Strategic Systems • Global Execution
-</div>
 
 </body>
 </html>
