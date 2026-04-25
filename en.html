@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Monkey Papa | Global Business Architect</title>
+<title>Monkey Papa | Flagship Website</title>
 
 <style>
 *{
@@ -12,236 +12,227 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     font-family: Arial, sans-serif;
-    background:#0b0b0b;
-    color:#ffffff;
-    line-height:1.7;
+    background:#000;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+section{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:60px;
+    border-bottom:1px solid rgba(255,255,255,0.08);
 }
 
 .container{
-    width:90%;
+    width:100%;
     max-width:1200px;
     margin:auto;
 }
 
-header{
-    padding:100px 0 80px;
-    text-align:center;
-    background:linear-gradient(to bottom,#111,#000);
+.hero{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
 }
 
-header h1{
-    font-size:64px;
-    margin-bottom:20px;
-    font-weight:700;
+.logo-box{
+    text-align:center;
+}
+
+.logo-box img{
+    width:260px;
+    max-width:100%;
+    margin-bottom:30px;
+}
+
+.logo-box h1{
+    font-size:58px;
     letter-spacing:2px;
 }
 
-header h2{
-    font-size:28px;
-    margin-bottom:25px;
-    color:#d9d9d9;
-}
-
-header p{
-    max-width:800px;
-    margin:auto;
-    font-size:20px;
-    color:#bbbbbb;
-}
-
-.section{
-    padding:80px 0;
-    border-top:1px solid rgba(255,255,255,0.08);
-}
-
-.section h3{
-    font-size:38px;
-    margin-bottom:30px;
-    text-align:center;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
-    margin-top:40px;
-}
-
-.card{
-    background:#141414;
-    border:1px solid rgba(255,255,255,0.08);
-    border-radius:16px;
-    padding:30px;
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-6px);
-}
-
-.card h4{
+.logo-box h2{
     font-size:24px;
-    margin-bottom:15px;
+    color:#cccccc;
+    margin-top:15px;
 }
 
-.card p{
-    color:#cfcfcf;
+.logo-box p{
+    margin-top:40px;
+    font-size:22px;
+    font-weight:600;
+    line-height:1.6;
+}
+
+.timeline{
+    border-left:2px solid rgba(255,255,255,0.25);
+    padding-left:40px;
+}
+
+.timeline-item{
+    margin-bottom:40px;
+}
+
+.timeline-item h3{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.timeline-item p{
+    color:#cccccc;
+    font-size:18px;
+}
+
+.content{
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+}
+
+.content h2{
+    font-size:52px;
+    margin-bottom:30px;
+}
+
+.content p{
+    font-size:22px;
+    line-height:1.8;
+    color:#d0d0d0;
 }
 
 .quote{
-    text-align:center;
-    font-size:32px;
+    font-size:42px;
     font-weight:700;
-    padding:100px 20px;
-    color:#ffffff;
+    text-align:center;
+    line-height:1.5;
 }
 
 .footer{
     text-align:center;
-    padding:60px 20px;
-    color:#999;
-    border-top:1px solid rgba(255,255,255,0.08);
+    padding:50px 20px;
+    font-size:16px;
+    color:#888;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-    <div class="container">
-        <h1>Monkey Papa</h1>
-        <h2>Global Business Architect</h2>
+<!-- Screen 1 -->
+
+<section>
+    <div class="container hero">
+
+        <div class="logo-box">
+            <!-- 替换成你的 logo 文件 -->
+            < img src="logo.png" alt="Monkey Papa Logo">
+
+            <h1>MONKEY PAPA</h1>
+            <h2>Global Business Architect</h2>
+
+            <p>
+                We Build Systems.<br>
+                Not Just Businesses.
+            </p >
+        </div>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <h3>2024</h3>
+                <p>Strategic Foundation</p >
+            </div>
+
+            <div class="timeline-item">
+                <h3>2025</h3>
+                <p>One-Person Business Series</p >
+            </div>
+
+            <div class="timeline-item">
+                <h3>2026</h3>
+                <p>Global Business Systems</p >
+            </div>
+
+            <div class="timeline-item">
+                <h3>2027</h3>
+                <p>Commercial Empire Expansion</p >
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Screen 2 -->
+
+<section>
+    <div class="content">
+        <h2>What We Build</h2>
         <p>
-            We don't just sell books.  
-            We build business systems.
-            From strategy to execution, from ideas to scalable commercial structures.
-        </p >
-    </div>
-</header>
-
-<section class="quote">
-    We Sell Clarity.  
-    We Design Execution.
-</section>
-
-<section class="section">
-    <div class="container">
-        <h3>Who We Are</h3>
-        <p style="text-align:center; max-width:900px; margin:auto; font-size:18px; color:#cccccc;">
-            Monkey Papa is a cross-industry business architect focused on rebuilding modern commercial systems.
-            We work across restaurants, beauty salons, farms, retail, AI workflows, automation systems,
-            and digital business structures.
-            Our mission is simple:
-            transform fragmented ideas into profitable and executable systems.
+            Monkey Papa designs scalable commercial systems across industries.
+            From restaurants to retail, from AI workflows to digital operations,
+            we transform fragmented ideas into profitable and executable structures.
         </p >
     </div>
 </section>
 
-<section class="section">
-    <div class="container">
-        <h3>Our Core Products</h3>
+<!-- Screen 3 -->
 
-        <div class="grid">
+<section>
+    <div class="content">
+        <h2>One-Person Empire Series</h2>
+        <p>
+            One-Person Restaurant<br>
+            One-Person Nail Salon<br>
+            One-Person Farm<br>
+            One-Person Botanical Garden<br><br>
 
-            <div class="card">
-                <h4>Books</h4>
-                <p>
-                    Top Business Thinking,
-                    One-Person Business Series,
-                    Business System Design,
-                    and strategic whitepapers.
-                </p >
-            </div>
-
-            <div class="card">
-                <h4>Consulting</h4>
-                <p>
-                    Business diagnosis,
-                    structure optimization,
-                    growth path design,
-                    and operational strategy consulting.
-                </p >
-            </div>
-
-            <div class="card">
-                <h4>Complete Solutions</h4>
-                <p>
-                    Full workflow systems,
-                    AI automation,
-                    backend architecture,
-                    and scalable business frameworks.
-                </p >
-            </div>
-
-            <div class="card">
-                <h4>Intellectual Brand</h4>
-                <p>
-                    Global content systems,
-                    books,
-                    media influence,
-                    and long-term strategic brand building.
-                </p >
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container">
-        <h3>One-Person Business Series</h3>
-
-        <div class="grid">
-
-            <div class="card">
-                <h4>One-Person Restaurant</h4>
-                <p>
-                    Complete operational system for highly efficient solo restaurant management.
-                </p >
-            </div>
-
-            <div class="card">
-                <h4>One-Person Nail Salon</h4>
-                <p>
-                    Smart structure for beauty business efficiency and scalable service systems.
-                </p >
-            </div>
-
-            <div class="card">
-                <h4>One-Person Farm</h4>
-                <p>
-                    Agricultural workflow optimization and automated solo farming models.
-                </p >
-            </div>
-
-            <div class="card">
-                <h4>One-Person Botanical Garden</h4>
-                <p>
-                    Sustainable management systems for plant business and experiential spaces.
-                </p >
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container">
-        <h3>Future Vision</h3>
-        <p style="text-align:center; max-width:900px; margin:auto; font-size:18px; color:#cccccc;">
-            The goal is not to build a small business.
-            The goal is to build a commercial empire driven by systems.
-            Monkey Papa exists to design that architecture.
+            Books are not the final product.<br>
+            They are the entrance to complete business systems.
         </p >
     </div>
 </section>
 
-<footer class="footer">
-    Monkey Papa © 2026  
+<!-- Screen 4 -->
+
+<section>
+    <div class="content quote">
+        We Sell Clarity.<br>
+        We Design Execution.
+    </div>
+</section>
+
+<!-- Screen 5 -->
+
+<section>
+    <div class="content">
+        <h2>Strategic Consulting</h2>
+        <p>
+            Business diagnosis.<br>
+            System architecture.<br>
+            Workflow automation.<br>
+            Commercial optimization.<br><br>
+
+            We rebuild businesses from the ground up.
+        </p >
+    </div>
+</section>
+
+<!-- Footer -->
+
+<div class="footer">
+    Monkey Papa © 2026<br>
     Business Architecture • Strategic Systems • Global Execution
-</footer>
+</div>
 
 </body>
 </html>
