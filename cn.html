@@ -4,23 +4,247 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Monkey Papa | 全球商业架构师</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#0b0b0b;
+    color:#ffffff;
+    line-height:1.7;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+header{
+    padding:100px 0 80px;
+    text-align:center;
+    background:linear-gradient(to bottom,#111,#000);
+}
+
+header h1{
+    font-size:64px;
+    margin-bottom:20px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+header h2{
+    font-size:28px;
+    margin-bottom:25px;
+    color:#d9d9d9;
+}
+
+header p{
+    max-width:800px;
+    margin:auto;
+    font-size:20px;
+    color:#bbbbbb;
+}
+
+.section{
+    padding:80px 0;
+    border-top:1px solid rgba(255,255,255,0.08);
+}
+
+.section h3{
+    font-size:38px;
+    margin-bottom:30px;
+    text-align:center;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.card{
+    background:#141414;
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:16px;
+    padding:30px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.card h4{
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#cfcfcf;
+}
+
+.quote{
+    text-align:center;
+    font-size:32px;
+    font-weight:700;
+    padding:100px 20px;
+    color:#ffffff;
+}
+
+.footer{
+    text-align:center;
+    padding:60px 20px;
+    color:#999;
+    border-top:1px solid rgba(255,255,255,0.08);
+}
+</style>
 </head>
 
-<body style="background:#0b0b0b;color:white;text-align:center;padding:100px;font-family:Arial;">
+<body>
 
-<h1>Monkey Papa</h1>
+<header>
+    <div class="container">
+        <h1>Monkey Papa</h1>
+        <h2>全球商业架构师</h2>
+        <p>
+            我们不只是卖书。<br>
+            我们构建商业系统。<br>
+            从战略到执行，从想法到可规模化的商业结构。
+        </p >
+    </div>
+</header>
 
-<h2>全球商业架构师</h2>
+<section class="quote">
+    我们出售清晰。<br>
+    我们设计执行。
+</section>
 
-<p>
-我们不只是卖书。<br>
-我们构建商业系统。
-</p >
+<section class="section">
+    <div class="container">
+        <h3>我们是谁</h3>
+        <p style="text-align:center; max-width:900px; margin:auto; font-size:18px; color:#cccccc;">
+            Monkey Papa 是一个跨行业的商业架构师品牌，
+            专注于重构现代商业系统。
+            我们服务于餐厅、美甲店、农场、植物园、零售、
+            AI工作流、自动化系统以及数字商业结构。
+            我们的使命很简单：
+            把碎片化的想法，
+            变成真正可执行且可盈利的商业系统。
+        </p >
+    </div>
+</section>
 
-<p>
-从战略到执行，<br>
-从想法到可规模化商业结构。
-</p >
+<section class="section">
+    <div class="container">
+        <h3>核心产品</h3>
+
+        <div class="grid">
+
+            <div class="card">
+                <h4>书籍体系</h4>
+                <p>
+                    顶级商业思维、
+                    一人商业系列、
+                    商业系统设计、
+                    战略白皮书与方法论输出。
+                </p >
+            </div>
+
+            <div class="card">
+                <h4>商业咨询</h4>
+                <p>
+                    商业诊断、
+                    结构优化、
+                    增长路径设计、
+                    运营策略咨询。
+                </p >
+            </div>
+
+            <div class="card">
+                <h4>完整解决方案</h4>
+                <p>
+                    全流程系统设计、
+                    AI自动化、
+                    后台架构搭建、
+                    可扩展商业模型。
+                </p >
+            </div>
+
+            <div class="card">
+                <h4>知识品牌</h4>
+                <p>
+                    全球内容系统、
+                    图书、
+                    媒体影响力、
+                    长期战略品牌建设。
+                </p >
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h3>一人商业系列</h3>
+
+        <div class="grid">
+
+            <div class="card">
+                <h4>一人餐厅</h4>
+                <p>
+                    高效率、低人工成本的单人餐厅完整运营系统。
+                </p >
+            </div>
+
+            <div class="card">
+                <h4>一人美甲店</h4>
+                <p>
+                    美业效率提升与可扩展服务系统的智能结构设计。
+                </p >
+            </div>
+
+            <div class="card">
+                <h4>一人农场</h4>
+                <p>
+                    农业工作流优化与自动化单人农场模型。
+                </p >
+            </div>
+
+            <div class="card">
+                <h4>一人植物园</h4>
+                <p>
+                    植物商业与体验空间的可持续管理系统。
+                </p >
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h3>未来愿景</h3>
+        <p style="text-align:center; max-width:900px; margin:auto; font-size:18px; color:#cccccc;">
+            目标不是建立一家小生意，
+            而是打造一个由系统驱动的商业帝国。
+            Monkey Papa 的存在，
+            就是为了设计这套架构。
+        </p >
+    </div>
+</section>
+
+<footer class="footer">
+    Monkey Papa © 2026<br>
+    商业架构 • 战略系统 • 全球执行
+</footer>
 
 </body>
 </html>
